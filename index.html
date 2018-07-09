@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title></title>
+</head>
+<body>
+
+	<div class="body">
+		<div id="header">
+			<div class="head_c">
+				<div id="logo">D.D</div>
+			</div>
+			<div class="head_c"></div>
+			<div class="head_c">
+				<div class="menu_item">about</div>
+			</div>
+			<div class="head_c">
+				<div class="menu_item">projects</div>
+			</div>
+			<div class="head_c">
+				<div class="menu_item">contact</div>
+			</div>
+		</div>
+		<div id="b_slider">
+			<div id="about" class="b_s_box">
+				<div class="b_s_box_c">
+					<div class="acube acube1"></div>
+				</div>
+				<div class="b_s_box_c">
+					<div class="acube acube2"></div>	
+				</div>
+				<div class="b_s_box_c">
+					<div class="acube acube3"></div>
+				</div>
+				<div class="b_s_box_c">
+					<div class="acube acube4"></div>
+				</div>
+				<div class="b_s_box_c">
+					<div class="acube acube5"></div>
+				</div>
+				<div class="kfn">
+					<h1>Luka Kupunia</h1>
+
+
+
+					<div class="wrapper">
+					  <div class="cube">
+					    <b class="front"></b>
+					    <b class="back"></b>
+					    <b class="top"></b>
+					    <b class="bottom"></b>
+					    <b class="left"></b>
+					    <b class="right"></b>
+					    <div class='luka'>
+					    <i class="front"></i>
+					    <i class="back"></i>
+					    <i class="left"></i>
+					    <i class="right"></i>
+					    </div>
+					  </div>
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<div id="myimg"></div>
+					<p class="about_me">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+			<!-- <div id="projects" class="b_s_box"></div>
+			<div id="contact" class="b_s_box"></div> -->
+		</div>
+	</div>
+
+<script type="text/javascript">
+	
+	var x = $('.menu_item');
+	x.hover(
+		function(){
+			$(this).parent().addClass('h_c')
+		}, function(){
+			$(this).parent().removeClass('h_c')
+		}
+	)
+
+	$(document).ready(function(){
+    animateDiv1();
+    animateDiv2();
+    animateDiv3();
+    animateDiv4();
+    animateDiv5();
+    
+});
+
+function makeNewPosition(){
+    
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $('.b_s_box_c').height() - 450;
+    var w = $('.b_s_box_c').width() - 450;
+    
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+    
+    return [nh,nw];    
+    
+}
+
+function animateDiv1(){
+    var newq = makeNewPosition();
+    $('.acube1').animate({ top: newq[0], left: newq[1] }, function(){
+      animateDiv1();        
+    });
+    
+};
+function animateDiv2(){
+    var newq = makeNewPosition();
+    $('.acube2').animate({ top: newq[0], left: newq[1] }, function(){
+      animateDiv2();        
+    });
+    
+};
+function animateDiv3(){
+    var newq = makeNewPosition();
+    $('.acube3').animate({ top: newq[0], left: newq[1] }, function(){
+      animateDiv3();        
+    });
+    
+};
+function animateDiv4(){
+    var newq = makeNewPosition();
+    $('.acube4').animate({ top: newq[0], left: newq[1] }, function(){
+      animateDiv4();        
+    });
+    
+};
+function animateDiv5(){
+    var newq = makeNewPosition();
+    $('.acube5').animate({ top: newq[0], left: newq[1] }, function(){
+      animateDiv5();        
+    });
+    
+};
+
+
+
+
+</script>
+
+</body>
+</html>
