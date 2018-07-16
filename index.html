@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<title></title>
+</head>
+<body>
+
+	<div id="loader_body">
+		<div id="load">
+			<div class="stick1"></div>
+			<div class="stick2"></div>
+			<div class="stick3"></div>
+			<div class="stick4"></div>
+			<div class="name"><span><</span> Luka <span>/></span></div>
+		</div>
+	</div>
+
+	<div id="main_body">
+		<div id="about">
+			<header>
+				<div id="logo">D.D</div>
+				<nav>
+					<a href="#about">ABOUT</a>
+					<a href="#skills">SKILLS</a>
+					<a href="#projects">PROJECTS</a>
+				</nav>
+			</header>
+			<section id="about_s">
+				<div id="m_name">
+					<h1>Luka Kupunia</h1>
+					<h2>Front-End Web Developer</h2>
+				</div>
+				<div id="about_p">
+					Hi everyone.I am Front-end web developer from Georgia. I have more than 2 years of experience in developing various kinds of websites from simple to really complex ones. I love working on startups. My hobbies are music, science and playing football.
+				</div>
+			</section>
+		</div>
+		<div id="skills">
+			<div id="skill_box">
+				<p>SKILLS</p>
+				<div class="s_box">responsive design</div>
+				<div class="s_box">animated website</div>
+				<div class="s_box">pixel perfect project</div>
+				<div class="s_box">some work at back side</div>
+				<div class="s_box">create database(MySql)</div>
+				<div class="s_box">fix bugs</div>
+			</div>
+		</div>
+		<div id="projects">
+			<div id="pr_box">
+				<p>PROJECTS</p>
+				<div class="p_box" style="background: url(../portfolio/img/web1.png) no-repeat; background-size: cover;">
+					<a href="https://kufuna.github.io/websitea/" target="_blank">
+						<div class="filter"></div>
+					</a>
+				</div>
+				<div class="p_box" style="background: url(../portfolio/img/web2.png) no-repeat; background-size: cover;">
+					<a href="https://kufuna.github.io/websiteb/" target="_blank">
+						<div class="filter"></div>
+					</a>
+				</div>
+				<div class="p_box" style="background: url(../portfolio/img/web3.png) no-repeat; background-size: cover;">
+					<a href="https://kufuna.github.io/websitec/" target="_blank">
+						<div class="filter"></div>
+					</a>
+				</div>
+				<div class="p_box" style="background: url(../portfolio/img/web4.png) no-repeat; background-size: cover;">
+					<a href="https://kufuna.github.io/portfolio/" target="_blank">
+						<div class="filter"></div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<a href="https://www.facebook.com/Lkufuna">FACEBOOK</a>
+			<a href="mailto:kupunaweb@gmail.com">EMAIL</a>
+			<a href="">UPWORK</a>
+		</footer>
+	</div>
+
+
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+
+		$(function(){
+
+			setTimeout(function() {
+
+				$('#loader_body').fadeOut();
+				$('#main_body').fadeIn();
+			}, 2300);
+
+		});
+
+	});
+
+</script>
+
+</body>
+</html>
