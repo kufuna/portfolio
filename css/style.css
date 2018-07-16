@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	background: black;
+	min-width: 1200px;
 }
 * {
 	box-sizing: border-box;
@@ -15,7 +16,7 @@ div#loader_body {
 	position: absolute;
 	background: rgb(14,14,14);
 	padding: 50px;
-	display: none;
+	
 }
 div#load {
 	width: 100%;
@@ -90,6 +91,7 @@ div.name span {
 }
 div#main_body {
 	width: 100%;
+	display: none;
 }
 div#about {
 	width: 100%;
